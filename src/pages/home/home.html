@@ -1,0 +1,24 @@
+<ion-header >
+  <ion-navbar >
+    <ion-title>
+      Biscoito da Sorte
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <img class="position" src="../../assets/imgs/biscoito.png" alt="">
+
+  <div *ngIf="view">
+    <h1 class="style_frase">"{{view.frase}}"</h1>
+    <p class="style_autor">"{{view.autor}}"</p>
+  </div>
+
+  <div class="fixo">
+    <button class="button" (click)="quantidade()" (click)="launchInterstitial()" ion-button color="danger" round>Abrir Biscoito</button>
+    <!-- <button class="button" (click)="launchRewardedVideo()" ion-button color="danger" round>Abrir Biscoito</button> -->
+  </div>
+
+
+</ion-content>
